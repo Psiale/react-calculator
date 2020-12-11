@@ -1,9 +1,11 @@
 import ButtonPanel from './ButtonPanel';
-import Display from './display';
+import Display from './Display';
 
 const App = () => (
   <div className="app">
-    <ButtonPanel />
     <Display result="999" />
+    <ButtonPanel />
   </div>
 );
+
+export default App;
