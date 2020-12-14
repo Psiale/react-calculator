@@ -34,7 +34,7 @@ const calculate = (calculator, btnName) => {
       (!total.includes('.')) ? total += '.' : total = '0.';
       break;
     case '=':
-      total = operate(total, next, operation)
+      total = operate(total, next, operation);
       next = operation = null;
       break;
     case 'AC':
