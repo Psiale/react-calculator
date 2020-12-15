@@ -10,40 +10,35 @@ class App extends React.Component {
     this.state = {
       total: null,
       next: null,
-      operation: null,
+      operation: null, // eslint-disable-line react/no-unused-state
     };
   }
 
   handleClick(buttonName) {
     const { total, next, operation } = this.state;
-    const calculator = {
-      total,
-      next,
-      operation,
-    };
-
-    const calculated = calculate(calculator, buttonName);
-
+    const results = calculate({ total, next, operation }, buttonName);
+    console.log(results);
     this.setState({
-      total: calculated.total,
-      next: calculated.next,
-      operation: calculated.operation,
+      total: results.total,
+      next: results.next,
+      operation: results.operation,
     });
   }
 
   render() {
+    const { total, next } = this.state;
     return (
       <>
-        <Display result="999" />
+        <Display result={total || next} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
   }
 }
 App.defaultProps = {
-  total: null,
-  next: null,
-  operation: null,
+  total: '999',
+  next: '1',
+  operation: '+',
 };
 
 export default App;

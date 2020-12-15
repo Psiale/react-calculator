@@ -2,6 +2,7 @@ import operate from './operate';
 
 const calculate = (calculator, btnName) => {
   let { total, next, operation } = calculator;
+  console.log(btnName);
   switch (btnName) {
     case '0':
     case '1':
@@ -18,7 +19,7 @@ const calculate = (calculator, btnName) => {
     case '+':
     case '-':
     case '%':
-    case 'x':
+    case 'X':
     case '÷':
       operation = btnName;
       if (total) {
@@ -31,10 +32,11 @@ const calculate = (calculator, btnName) => {
       if (total) total = (total * -1).toString();
       break;
     case '.':
-      (!total.includes('.')) ? total += '.' : total = '0.';
+      (total && !total.includes('.')) ? total += '.' : total = '0.';
       break;
     case '=':
       total = operate(total, next, operation);
+      console.log(total);
       next = operation = null;
       break;
     case 'AC':
