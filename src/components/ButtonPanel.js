@@ -5,7 +5,6 @@ import Button from './Button';
 const ButtonPanel = ({ clickHandler }) => {
   const handleClick = ({ name }) => {
     (clickHandler(name));
-    console.log(name);
   };
   return (
     <>

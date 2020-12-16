@@ -18,12 +18,11 @@ const operate = (numOne, numTwo, operation) => {
       case '-':
         result = bigNumOne.minus(bigNumTwo);
         break;
-      case 'x':
-        result = bigNumOne.pow(bigNumTwo);
-        console.log(result);
+      case 'X':
+        result = bigNumOne.times(bigNumTwo);
         break;
       case '÷':
-        bigNumTwo.eq(0) ? (result = 0) : (result = bigNumOne.div(bigNumTwo));
+        bigNumOne.eq(0) ? (result = 0) : (result = bigNumTwo.div(bigNumOne));
         break;
       case '%':
         bigNumTwo === null
@@ -34,7 +33,6 @@ const operate = (numOne, numTwo, operation) => {
       default:
         break;
     }
-    console.log(result);
     return result.toString();
   }
   return numOne;

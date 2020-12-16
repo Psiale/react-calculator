@@ -3,7 +3,6 @@ import React from 'react';
 
 const Button = ({ name, clickHandler }) => {
   const handleClick = name => {
-    console.log(`this is the name passed from button: ${name}`);
     (clickHandler(name));
   };
   return (
