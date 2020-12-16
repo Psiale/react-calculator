@@ -22,7 +22,7 @@ The premise of this project is to build a MVC calculator for Math-magicians a fi
 
 ### ⌨️ Local 
 
-1. Go to the [repositorie](https://github.com/Psiale/react-calculator) and press on the green button that says ```code```
+1. Go to the [repository](https://github.com/Psiale/react-calculator) and press on the green button that says ```code```
 2. Copy the link and open a terminal 
 
     windows:
