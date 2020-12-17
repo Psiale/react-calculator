@@ -6,9 +6,9 @@ const Button = ({ name, clickHandler }) => {
     (clickHandler(name));
   };
   return (
-    <>
+    <div className={name === '0' ? 'buttonZeroContainer' : 'button-container'}>
       <button onClick={() => handleClick({ name })} type="button">{name}</button>
-    </>
+    </div>
   );
 };
 

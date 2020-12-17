@@ -1,43 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { PropTypes } from 'prop-types';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculate from '../logic/calculate';
+import '../App.css';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null, // eslint-disable-line react/no-unused-state
-    };
-  }
+const App = () => {
+  const [total, setTotal] = useState(null);
+  const [next, setNext] = useState(null);
+  const [operation, setOperation] = useState(null);
 
-  handleClick(buttonName) {
-    const { total, next, operation } = this.state;
+  const handleClick = buttonName => {
     const results = calculate({ total, next, operation }, buttonName);
-    this.setState({
-      total: results.total,
-      next: results.next,
-      operation: results.operation,
-    });
-  }
 
-  render() {
-    const { total, next } = this.state;
-    return (
-      <>
+    setTotal(results.total);
+    setNext(results.next);
+    setOperation(results.operation);
+  };
+  return (
+    <div className="main-container">
+      <div className="calculator-container">
         <Display result={total || next} />
-        <ButtonPanel clickHandler={this.handleClick} />
-      </>
-    );
-  }
-}
-App.defaultProps = {
-  total: '999',
-  next: '1',
-  operation: '+',
+        <ButtonPanel clickHandler={handleClick} />
+      </div>
+    </div>
+
+  );
 };
 
 export default App;
