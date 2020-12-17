@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculate from '../logic/calculate';
+import '../App.css';
 
 const App = () => {
   const [total, setTotal] = useState(null);
@@ -17,10 +18,13 @@ const App = () => {
     setOperation(results.operation);
   };
   return (
-    <>
-      <Display result={total || next} />
-      <ButtonPanel clickHandler={handleClick} />
-    </>
+    <div className="main-container">
+      <div className="calculator-container">
+        <Display result={total || next} />
+        <ButtonPanel clickHandler={handleClick} />
+      </div>
+    </div>
+
   );
 };
 
