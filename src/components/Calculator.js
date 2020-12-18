@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculate from '../logic/calculate';
+import NavBar from './Navbar';
 import '../App.css';
 
 const Calculator = () => {
@@ -19,12 +20,12 @@ const Calculator = () => {
   };
   return (
     <div className="main-container">
+      <NavBar />
       <div className="calculator-container">
         <Display result={total || next} />
         <ButtonPanel clickHandler={handleClick} />
       </div>
     </div>
-
   );
 };
 

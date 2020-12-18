@@ -1,0 +1,12 @@
+.navbar-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 4px 8px;
+}
+
+
+.link-container {
+    display: flex;
+    
+}
