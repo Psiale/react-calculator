@@ -5,7 +5,7 @@ import Display from './Display';
 import calculate from '../logic/calculate';
 import '../App.css';
 
-const App = () => {
+const Calculator = () => {
   const [total, setTotal] = useState(null);
   const [next, setNext] = useState(null);
   const [operation, setOperation] = useState(null);
@@ -28,4 +28,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Calculator;
