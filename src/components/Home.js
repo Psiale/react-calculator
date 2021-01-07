@@ -11,6 +11,12 @@ const Home = () => (
       cupiditate libero eveniet totam nam doloremque odit odio. Asperiores
       labore libero quod.
     </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nemo
+      tempora. Minima, ducimus, consequuntur distinctio labore ullam ut
+      cupiditate libero eveniet totam nam doloremque odit odio. Asperiores
+      labore libero quod.
+    </p>
   </div>
 );
 

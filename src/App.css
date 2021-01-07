@@ -3,6 +3,8 @@ body,
 #root {
   width: 100%;
   height: 100%;
+  background-color: black;
+  color: white;
 }
 
 .main-container {
@@ -15,8 +17,19 @@ body,
 
 .calculator-container {
   display: flex;
-  width: 700px;
+  width: 100%;
+  flex-direction: row;
+}
+
+.calculator-title {
+  width: calc(100% - 710px);
+}
+
+.calculator {
+  display: flex;
   flex-direction: column;
+  width: 700px;
+  height: 500px;
 }
 
 .result {
@@ -59,4 +72,37 @@ body,
 #buttonZeroContainer > button {
   width: 100%;
   height: 100%;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.home-container,
+.calculator-title > h3 {
+  font-size: 50px;
+}
+
+.home-container > p {
+  font-size: 25px;
+}
+
+.main-quote-container {
+  width: 100%;
+  height: 100%;
+}
+
+.quote-container {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  font-size: 30px;
+  justify-content: center;
+
+}
+
+.quote-container > h1 {
+  width: 80%;
 }

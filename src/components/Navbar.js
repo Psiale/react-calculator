@@ -11,7 +11,7 @@ function Navbar() {
       <div className="link-container">
         <Link to="/">Home </Link>
         <span> | </span>
-        <Link to="/Calculator">About Us </Link>
+        <Link to="/Calculator">Calculator </Link>
         <span> | </span>
         <Link to="/Quote">Quote </Link>
         <span> | </span>

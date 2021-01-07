@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { PropTypes } from 'prop-types';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculate from '../logic/calculate';
@@ -19,11 +18,17 @@ const Calculator = () => {
     setOperation(results.operation);
   };
   return (
-    <div className="main-container">
+    <div className="home-container">
       <NavBar />
       <div className="calculator-container">
-        <Display result={total || next} />
-        <ButtonPanel clickHandler={handleClick} />
+        <div className="calculator-title">
+          <h3> Let us do some math! </h3>
+
+        </div>
+        <div className="calculator">
+          <Display result={total || next} />
+          <ButtonPanel clickHandler={handleClick} />
+        </div>
       </div>
     </div>
   );
