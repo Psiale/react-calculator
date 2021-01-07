@@ -1,7 +1,7 @@
 import Adapter from 'enzyme-adapter-react-16';
 import { shallow, configure } from 'enzyme';
-import NavBar from '../Navbar';
-import Home from '../Home';
+import NavBar from '../../Navbar';
+import Home from '../../Home';
 
 configure({ adapter: new Adapter() });
 

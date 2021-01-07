@@ -1,10 +1,10 @@
 import Adapter from 'enzyme-adapter-react-16';
 import { shallow, configure } from 'enzyme';
-import ButtonPanel from '../ButtonPanel';
-import Display from '../Display';
-import Calculator from '../Calculator';
-import Navbar from '../Navbar';
-import Button from '../Button';
+import ButtonPanel from '../../ButtonPanel';
+import Display from '../../Display';
+import Calculator from '../../Calculator';
+import Navbar from '../../Navbar';
+import Button from '../../Button';
 
 configure({ adapter: new Adapter() });
 const mockfn = () => 'hello';

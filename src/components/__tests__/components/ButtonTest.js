@@ -1,7 +1,7 @@
 import Adapter from 'enzyme-adapter-react-16';
 import { shallow, configure } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Button from '../Button';
+import Button from '../../Button';
 
 configure({ adapter: new Adapter() });
 

@@ -1,7 +1,7 @@
 import Adapter from 'enzyme-adapter-react-16';
 import { shallow, configure } from 'enzyme';
 import renderer from 'react-test-renderer';
-import ButtonPanel from '../ButtonPanel';
+import ButtonPanel from '../../ButtonPanel';
 
 configure({ adapter: new Adapter() });
 const mockfn = () => 'hello';

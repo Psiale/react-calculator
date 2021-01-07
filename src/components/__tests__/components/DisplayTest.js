@@ -1,7 +1,7 @@
 import Adapter from 'enzyme-adapter-react-16';
 import { shallow, configure } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Display from '../Display';
+import Display from '../../Display';
 
 configure({ adapter: new Adapter() });
 
