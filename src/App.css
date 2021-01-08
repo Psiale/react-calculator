@@ -1,3 +1,108 @@
-.App {
-  text-align: center;
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.calculator-title {
+  width: calc(100% - 710px);
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 500px;
+}
+
+.result {
+  width: 100%;
+  background-color: #858694;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.result > p {
+  color: white;
+  font-size: 28px;
+}
+
+.buttonPanel-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.button-container {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container > button {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  background-color: #e0e0e0;
+  border: 2px solid #d1d1d1;
+}
+
+#buttonZeroContainer {
+  width: 50%;
+}
+
+#buttonZeroContainer > button {
+  width: 100%;
+  height: 100%;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.home-container,
+.calculator-title > h3 {
+  font-size: 50px;
+}
+
+.home-container > p {
+  font-size: 25px;
+}
+
+.main-quote-container {
+  width: 100%;
+  height: 100%;
+}
+
+.quote-container {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  font-size: 30px;
+  justify-content: center;
+
+}
+
+.quote-container > h1 {
+  width: 80%;
 }
